@@ -92,7 +92,7 @@ const ContactForm = () => {
         <div className="contact-container">
         <h3 className="head-text mt-5 lg:mt-8">Content Creator Information Form</h3>
         <p className="text-lg text-white-600 mt-3">
-            Whether you're looking to start a business or improve your existing business, we're here to help.
+           Please fill in the form below.
         </p>
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-7 '>
             <label className='space-y-3'>
@@ -323,7 +323,7 @@ const ContactForm = () => {
                 required
                 rows={5}
                 className="field-input" 
-                placeholder="Hi, I wanna give you a job..." />
+                placeholder="Hi, I monetize my social media accounts by..." />
             </label>
             <label className='space-y-3'>
                 <span className="field-label">
