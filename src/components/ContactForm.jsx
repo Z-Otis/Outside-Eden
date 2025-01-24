@@ -88,7 +88,7 @@ const ContactForm = () => {
   return (
    <section className='c-space my-20'>
     <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/img/terminal.png" alt="terminal background" className='absolute inset-0 min-h-screen' />
+        <img src="/img/terminal.png" alt="terminal background" className='absolute inset-0 min-h-[2600px]' />
         <div className="contact-container">
         <h3 className="head-text mt-5 lg:mt-8">Content Creator Information Form</h3>
         <p className="text-lg text-white-600 mt-3">
@@ -250,9 +250,9 @@ const ContactForm = () => {
         <h2 className="field-label">Social Media Profiles</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="bg-gray-200 text-black">
+            <tr className="bg-black-100 text-white">
               {columnHeadings.map((heading, index) => (
-                <th key={index} className="border border-gray-300 p-2">{heading}</th>
+                <th key={index} className="border border-gray-300">{heading}</th>
               ))}
             </tr>
           </thead>
@@ -312,47 +312,10 @@ const ContactForm = () => {
         ))}
       </div>
 
-            <label className='space-y-3'>
-                <span className="field-label">
-                   How do you monetize your social media accounts?
-                </span>
-                <textarea type="text" 
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input" 
-                placeholder="Hi, I monetize my social media accounts by..." />
-            </label>
-            <label className='space-y-3'>
-                <span className="field-label">
-                   Which of the social media platforms are you always using?
-                </span>
-                <textarea type="text" 
-                name="socialMediaPlatforms"
-                value={form.socialMediaPlatforms}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input" 
-                placeholder="Instagram,..." />
-            </label>
-            <label className='space-y-3'>
-                <span className="field-label">
-                   Provide the links of the content youre most proud of and provide the reason why.
-                </span>
-                <textarea type="text" 
-                name="contentLink"
-                value={form.contentLink}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input" 
-                placeholder="Provide a link" />
-            </label>
+            
+            
             <button className='field-btn' type='submit' disabled={loading}>
-                {loading ? 'Sending...' : 'Send Message'}
+                {loading ? 'Sending...' : 'Submit'}
                 <img src='img/arrow-up.png' alt='arrow-up' className='field-btn_arrow' />
             </button>
         </form>
